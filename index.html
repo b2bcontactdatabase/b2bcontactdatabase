@@ -1,1 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B2B Contact Database</title>
 
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+            color: #222;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .hero {
+            padding: 90px 8%;
+            text-align: center;
+            background: white;
+        }
+
+        .hero h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.7;
+            color: #555;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 14px 28px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .section {
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 35px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        @media(max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h2 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>B2B Contact Database</h1>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Business Contact Database</h2>
+
+    <p>
+        Discover business contact data, professional directories,
+        lead generation resources and useful B2B information
+        for businesses, marketers and sales professionals.
+    </p>
+
+    <a href="#services" class="btn">Explore Database</a>
+</section>
+
+<section class="section" id="services">
+
+    <h2>Our Services</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Business Contact Lists</h3>
+            <p>
+                Explore business contact information and professional
+                data resources for B2B marketing.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Lead Generation</h3>
+            <p>
+                Find useful resources designed to support prospecting,
+                outreach and business development.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>B2B Data Resources</h3>
+            <p>
+                Access organized business data resources for marketers,
+                agencies and sales professionals.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="section" id="about">
+
+    <h2>About Us</h2>
+
+    <p style="max-width:700px;margin:20px auto;line-height:1.8;">
+        B2B Contact Database provides business data resources
+        designed to help companies, marketers and sales teams
+        discover useful information for professional outreach
+        and lead generation.
+    </p>
+
+</section>
+
+<section class="section" id="contact">
+
+    <h2>Contact Us</h2>
+
+    <p style="margin-top:20px;">
+        For business inquiries and partnerships, please contact us.
+    </p>
+
+</section>
+
+<footer>
+    <p>© 2026 B2B Contact Database. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
